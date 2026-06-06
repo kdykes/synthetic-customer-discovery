@@ -5,9 +5,9 @@ description: >
   evidence-grounded persona files, run synthetic discovery interviews against them, and
   synthesize transcripts (real or synthetic) into evidence-backed reports. Use when planning
   customer or user interviews, writing screeners or interview guides, building or refining
-  personas, pressure-testing positioning or pricing hypotheses before talking to real people,
-  or synthesizing interview transcripts. Synthetic output is always framed as hypothesis,
-  never as validation.
+  personas or an ICP profile, pressure-testing positioning or pricing hypotheses before
+  talking to real people, or synthesizing interview transcripts. Synthetic output is always
+  framed as hypothesis, never as validation.
 ---
 
 # Synthetic Customer Discovery
@@ -47,11 +47,11 @@ incentive, never free or early product access, for discovery.
 
 ### Route B: Persona
 Build a new persona or refine an existing one.
-**Do:** Use `personas/_TEMPLATE.md`. Ground every section in real episodes from the user or
-their network; mark anything assumed with `[ASSUMED: confirm]`. Seed from whatever real
-material exists: the user's own experience, customer conversations, support tickets, sales
-call notes, community threads. `personas/example-mara-freelance-designer.md` shows the level
-of specificity required (it is fictional; real personas must not be).
+**Do:** Follow `references/persona-builder.md`. Never hand the user the blank template;
+interview them about a real person (or extract from their raw material: transcripts, tickets,
+notes) and write the file for them, marking everything inferred with `[ASSUMED: confirm]`.
+`personas/_TEMPLATE.md` defines the structure; `personas/example-mara-freelance-designer.md`
+shows the level of specificity required (it is fictional; real personas must not be).
 
 ### Route C: Simulate
 Run synthetic interviews: embody one or more personas and answer an interview guide in
@@ -90,6 +90,7 @@ synthetic-customer-discovery/
     example-mara-freelance-designer.md  # fictional worked example
   references/
     planner.md                   # Route A: plan, screener, guide, recruitment, incentives
+    persona-builder.md           # Route B: guided persona creation (interview / extract / draft)
     synthesis.md                 # Route D: transcripts to evidence-backed report
   examples/
     example-synthetic-run.md     # what a Route C output looks like

@@ -62,12 +62,19 @@ Four routes. Just describe what you need; the skill routes itself.
 | You say something like | Route | What you get |
 |---|---|---|
 | "Plan a discovery study on [topic]" | **Plan** | Research plan, screener, interview guide, recruitment & incentives plan |
-| "Build a persona from [my own experience / this customer / these tickets]" | **Persona** | A grounded persona file with a validation ledger |
+| "Build a persona for my ICP" | **Persona** | A ten-minute guided interview about a real customer; the skill writes the grounded persona file |
 | "Run a synthetic interview round against persona 01" | **Simulate** | In-character transcript + fidelity note |
 | "Synthesize these transcripts" | **Synthesize** | Report: findings (real evidence), hypotheses (synthetic), opportunities |
 
 Your study artifacts live in your project (suggested: a `research/` directory), not in the
 skill. The skill is methodology only.
+
+You never fill in the persona template by hand. Say "build a persona" and the skill
+interviews you about a real customer, one question at a time, for about ten minutes. Or paste
+raw material (sales calls, support tickets, interview notes) and it extracts. Either way it
+writes the file, marks everything it had to assume with `[ASSUMED: confirm]`, and tells you
+the two or three thinnest sections. No real customer yet? It will still build you a draft
+from your hunches, with every claim flagged, so you can see exactly what you don't know.
 
 ## What a run looks like
 
